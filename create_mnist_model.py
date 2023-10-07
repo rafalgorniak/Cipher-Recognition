@@ -36,7 +36,7 @@ prediction_probability = model.predict(x_test)
 prediction = np.array([np.argmax(pred) for pred in prediction_probability])
 
 # Display the model performance
-print(classification_report(y_test, prediction)
+print(classification_report(y_test, prediction))
 
 # Save model
 model.save('mnist_classification.h5')
